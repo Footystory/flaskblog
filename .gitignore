@@ -66,8 +66,5 @@ venv/
 # Visual studio code
 .vscode
 
-# SQlite database
-*.db
-
 # Project
 migrations
