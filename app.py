@@ -21,7 +21,7 @@ from wtforms.validators import (DataRequired, Email, EqualTo, Length,
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'secret'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI', 'sqlite:///site.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///site.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
